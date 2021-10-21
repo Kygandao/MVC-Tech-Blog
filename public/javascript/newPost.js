@@ -1,8 +1,8 @@
 async function newPost(e) {
   e.preventDefault();
 
-  const title = document.getElementById('new-post-title-field').value;
-  const post_content = document.getElementById('new-post-content-field').value;
+  const title = document.querySelector('#new-post-title-field').value;
+  const post_content = document.querySelector('#new-post-content-field').value;
 
   const response = await fetch(`/api/posts`, {
     method: 'POST',
@@ -22,7 +22,7 @@ async function newPost(e) {
   }
 }
 
-document.getElementsByClassName('.new-post-form').addEventListener('submit', newPost);
+document.querySelector('.new-post-form').addEventListener('submit', newPost);
 
 async function createNewPost(e) {
   e.preventDefault();
@@ -30,4 +30,4 @@ async function createNewPost(e) {
   document.location.replace('/dashboard/new')
 }
 
-document.getElementById('new-post-btn').addEventListener('click', createNewPost);
+document.querySelector('#new-post-btn').addEventListener('click', createNewPost);

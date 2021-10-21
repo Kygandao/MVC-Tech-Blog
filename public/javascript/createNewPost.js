@@ -4,4 +4,4 @@ async function createNewPost(e) {
     document.location.replace('/dashboard/new')
 }
 
-document.getElementById('new-post').addEventListener('click', createNewPost);
+document.querySelector('#new-post').addEventListener('click', createNewPost);

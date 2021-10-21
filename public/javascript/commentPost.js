@@ -1,7 +1,7 @@
 async function postComment(e) {
   e.preventDefault();
 
-  const comment_text = document.getElementById('comment').value.trim();
+  const comment_text = document.querySelector('#comment').value.trim();
 
   const post_id = window.location.toString().split('/')[
     window.location.toString().split('/').length - 1
@@ -27,4 +27,4 @@ async function postComment(e) {
   }
 }
 
-document.getElementsByClassName('comment-form').addEventListener('submit', postComment);
+document.querySelector('.comment-form').addEventListener('submit', postComment);
