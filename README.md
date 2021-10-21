@@ -10,7 +10,7 @@
   7. [Contribution Guidelines](#contributing-guidelines)
   8. [Testing](#testing)
   9. [Video Link](#video-link)
-  10.[Screenshot])#screenshot
+  10.[Screenshot](#screenshot)
 
 ## Username
 kygandao
@@ -44,4 +44,20 @@ Contact me before contributions
 No tests included
 
 ## Video Link
-[Click here to view the video]()
+[Click here to view the video](https://drive.google.com/file/d/1ldjVtJdiUnQFuI5LXNHzitbTNpXLQkEi/view?usp=sharing)
+
+## Screenshot
+HomePage
+![Screenshot](/images/home.png)
+
+Sign Up
+![Screenshot](/images/signup.png)
+
+Login
+![Screenshot](/images/login.png)
+
+Dashboard
+![Screenshot](/images/dashboard.png)
+
+New Post
+![Screenshot](/images/new-post.png)
