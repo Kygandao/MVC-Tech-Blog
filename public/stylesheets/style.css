@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  margin: 10;
+  font-family: sans-serif;
+  color: black;
+}
+
+.site-heading {
+  margin: 10px;
+  color: white;
+}
+
+.post {
+  line-height: 200%;
+}
+
+.post-content {
+  padding: 15px;
+}
+
+.user {
+  color: white;
+  font-size: 10px;
+}
+
+.login-view .signin-view, .edit-post-display {
+  display: flex;
+  flex-direction: column;
+}
+
+#login-title, #edit-form-title, #signup-title, #new-post-title {
+  color: white;
+  background-color: black;
+  padding: 15px;
+}
+
+.login-form .edit-form {
+  padding: 10px;
+  margin: 10px;
+}
+
+#username-login, #password-login, #login-form-btn, #username-signup, #password-signup, #signup-form-btn, #edit-post-title, #edit-post-content-field, #new-post-title-field, #new-post-content-field, #new-post-btn {
+  width: 100%;
+  margin: 5px;
+  padding: 5px;
+}
+
+#home-btn, #dashboard-btn, #login-btn, #logout-btn, #new-post-btn, #comment-btn {
+  padding: 5px;
+  margin: 5px;
+}
+
+#update-btn {
+  margin: 5px;
+  padding: 5px;
+  color: white;
+  background-color: green;
+}
+
+#delete-btn {
+  margin: 5px;
+  padding: 5px;
+  color: white;
+  background-color: red;
+}
+
+.new-post {
+  display: flex;
+}
+
+.posts {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+#edit-btn {
+  padding: 5px;
+  margin: 5px;
+  color: black;
+  background-color: orange;
+}
