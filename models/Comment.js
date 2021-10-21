@@ -30,7 +30,7 @@ Comment.init(
       type: DataTypes.STRING,
       allowNull: false,
       validate: {
-        len: [1, 500],
+        len: [1],
       },
     },
   },
