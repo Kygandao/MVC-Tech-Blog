@@ -91,7 +91,7 @@ router.get('/edit/:id', auth, (req, res) => {
                 plain: true
             });
 
-            res.render('editPost', {
+            res.render('edit', {
                 post,
                 loggedIn: true
             });
