@@ -23,4 +23,4 @@ async function signup(e) {
     }
 }
 
-document.getElementsByClassName('signup-form').addEventListener('submit', signup);
+document.querySelector('.signup-form').addEventListener('submit', signup);
