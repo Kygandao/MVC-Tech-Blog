@@ -1,0 +1,26 @@
+<a href="/dashboard">
+    <button id="dashboard-btn">Dashboard</button>
+</a>
+
+<div class="edit-div">
+    <h1 id="edit-form-title">Edit Post</h1>
+    <form class="edit-form">
+        <div>
+            <label for="">New Title</label>
+            <input type="text" id="edit-post-title" value="{{post.title}}" />
+        </div>
+        <div>
+            <label for="">New Content</label>
+            <textarea id="edit-post-content-field">{{post.content}}</textarea>
+        </div>
+        <div>
+            <button id="update-btn" type="submit">Update</button>
+            <button id="delete-btn">Delete</button>
+        </div>
+    </form>
+</div>
+
+{{#if loggedIn}}
+<script src="../public/javascript/editPost.js"></script>
+<script src="../public/javascript/deletePost.js"></script>
+{{/if}}

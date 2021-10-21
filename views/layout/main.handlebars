@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bob Loblaw's Tech Blog</title>
+    <link rel="stylesheet" href="../../public/stylesheets/style.css">
+</head>
+<body>
+    <div class="header-div">
+        <header>
+            <a href="/">
+                <button id="home-btn">Homepage</button>
+            </a>
+            <nav>
+                {{#if loggedIn}}
+                <a href="/dashboard">
+                    <button id="dashboard-btn">Dashboard</button>
+                </a>
+                <button id="logout-btn">Logout</button>
+                {{else}}
+                <a href="/login">
+                    <button id="login-btn">Login</button>
+                </a>
+                {{/if}}
+            </nav>
+        </header>
+        <div>
+            <h1 class="site-heading">THE Tech Blog</h1>
+        </div>
+        <main>
+            {{{ body }}}
+        </main>
+    </div>
+
+    {{#if loggedIn}}
+    <script src="../../public/javascript/logout.js"></script>
+    {{/if}}
+</body>
+</html>

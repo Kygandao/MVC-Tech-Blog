@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bob Loblaw's Tech Blog</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="wra">
+        <header>
+            <a href="/">
+                <button id="home-btn">Homepage</button>
+            </a>
+            <nav>
+                {{#if loggedIn}}
+                <a href="/dashboard">
+                    <button id="dashboard-btn">Dashboard</button>
+                </a>
+                <button id="logout-btn">Logout</button>
+                {{else}}
+                <a href="/login">
+                    <button id="login-btn">Login</button>
+                </a>
+                {{/if}}
+            </nav>
+        </header>
+        <div>
+            <h1 class="site-heading">THE Tech Blog</h1>
+        </div>
+        <main>
+            {{{ body }}}
+        </main>
+    </div>
+
+    <!--TEST BELOW-->
+    <div>
+        <button id="new-post-btn">+ Create New Post</button>
+    </div>
+    
+    {{#if posts.length}}
+    <div>
+        <h1 id="dashboard-title">
+            Your Dashboard
+        </h1>
+        <div class="post-display">
+            <ul class="posts">
+                {{#each posts as |post|}}
+                <li>
+                    {{> post-info post}}
+                    <a href="/dashboard/edit/{{post.id}}">
+                        <button class="edit-btn">Edit</button>
+                    </a>
+                </li>
+                {{/each}}
+            </ul>
+        </div>
+    </div>
+    {{/if}}
+<!--TEST ABOVE-->
+
+    {{#if loggedIn}}
+    <script src="../../public/javascript/logout.js"></script>
+    {{/if}}
+</body>
+</html>
