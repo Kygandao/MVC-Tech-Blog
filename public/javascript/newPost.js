@@ -23,11 +23,3 @@ async function newPost(e) {
 }
 
 document.querySelector('.new-post-form').addEventListener('submit', newPost);
-
-async function createNewPost(e) {
-  e.preventDefault();
-
-  document.location.replace('/dashboard/new')
-}
-
-document.querySelector('#new-post-btn').addEventListener('click', createNewPost);
