@@ -24,4 +24,4 @@ async function login(e) {
   }
 }
 
-document.getElementsByClassName('.login-form').addEventListener('submit', login);
+document.getElementsByClassName('login-form').addEventListener('submit', login);
