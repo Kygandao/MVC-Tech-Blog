@@ -10,7 +10,7 @@
   7. [Contribution Guidelines](#contributing-guidelines)
   8. [Testing](#testing)
   9. [Video Link](#video-link)
-  10.[Screenshot](#screenshot)
+  10. [Screenshot](#screenshot)
 
 ## Username
 kygandao
