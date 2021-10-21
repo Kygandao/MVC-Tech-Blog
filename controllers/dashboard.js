@@ -91,7 +91,7 @@ router.get('/edit/:id', auth, (req, res) => {
                 plain: true
             });
 
-            res.render('edit-post', {
+            res.render('editPost', {
                 post,
                 loggedIn: true
             });
@@ -103,7 +103,7 @@ router.get('/edit/:id', auth, (req, res) => {
 })
 
 router.get('/new', (req, res) => {
-    res.render('add-post', {
+    res.render('newPost', {
         loggedIn: true
     })
 })
