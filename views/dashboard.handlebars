@@ -1,25 +1,26 @@
 <div>
-    <button id="new-post-btn">+ Create New Post</button>
-</div>
-
-{{#if posts.length}}
-<div>
-    <h1 id="dashboard-title">
-        Your Dashboard
-    </h1>
-    <div class="post-display">
-        <ul class="posts">
-            {{#each posts as |post|}}
-            <li>
-                {{> info post}}
-                <a href="/dashboard/edit/{{post.id}}">
-                    <button class="edit-btn">Edit</button>
-                </a>
-            </li>
-            {{/each}}
-        </ul>
+    <div>
+        <button id="new-post-btn">+ Create New Post</button>
     </div>
+    {{#if posts.length}}
+    <div>
+        <h1 id="dashboard-title">
+            Your Dashboard
+        </h1>
+        <div class="post-display">
+            <ul class="posts">
+                {{#each posts as |post|}}
+                <li>
+                    {{> info post}}
+                    <a href="/dashboard/edit/{{post.id}}">
+                        <button class="edit-btn">Edit</button>
+                    </a>
+                </li>
+                {{/each}}
+            </ul>
+        </div>
+    </div>
+    {{/if}}
 </div>
-{{/if}}
 
 <script src="/javascript/createNewPost.js"></script>
