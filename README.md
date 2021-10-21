@@ -32,7 +32,7 @@ JAWSDB, MYSQL, and Heroku are then used to deploy the site.
 No installations required
 
 ## Usage
-The user will access the application here: https://secure-scrubland-88336.herokuapp.com/
+The user will access the application here: https://desolate-sea-35954.herokuapp.com/
 
 ## License
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
