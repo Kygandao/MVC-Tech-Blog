@@ -18,7 +18,7 @@ async function newPost(e) {
   if (response.ok) {
     document.location.replace('/dashboard');
   } else {
-    alert(response.statusText);
+    alert('Something went wrong, please try again!');
   }
 }
 
