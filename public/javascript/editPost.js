@@ -2,7 +2,7 @@ async function editPost(e) {
   e.preventDefault();
 
   const title = document.querySelector('#edit-post-title').value;
-  const post_content = document.querySelector('#edit-post-post-content-field').value.trim();
+  const post_content = document.querySelector('#edit-post-content-field').value;
   
   const post_id = window.location.toString().split('/')[
       window.location.toString().split('/').length - 1
