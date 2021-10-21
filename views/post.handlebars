@@ -2,7 +2,7 @@
     <button id="dashboard-btn">Dashboard</button>
 </a>
     
-{{ info post}}
+{{> info post}}
     
 {{#if loggedIn}}
 <div class="comment-div">
@@ -17,7 +17,7 @@
 </div>
 {{/if}}
     
-{{ comments post.comments}}
+{{> comments post.comments}}
     
 {{#if loggedIn}}
 <script src="/javascript/commentPost.js"></script>
